@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.class
 *.log
 
@@ -18,3 +19,18 @@ project/plugins/project/
 
 .idea
 .idea_modules
+
+# Ignore Play! specific artifacts
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
