@@ -7,6 +7,10 @@ scalaVersion := "2.11.7"
 resolvers += "Scalaz Bintray Repo" at "https://dl.bintray.com/scalaz/releases"
 
 libraryDependencies ++= Seq(
+  jdbc,
+  evolutions,
+  "com.typesafe.play" %% "anorm" % "2.4.0",
+  "com.h2database" % "h2" % "1.4.177",
   specs2 % Test
 )
 

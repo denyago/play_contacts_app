@@ -4,3 +4,7 @@
 
 # Home page
 GET     /                           controllers.ContactsController.index
+POST    /contacts                   controllers.ContactsController.create
+GET     /contacts/:id               controllers.ContactsController.show(id: Long)
+PUT     /contacts/:id               controllers.ContactsController.update(id: Long)
+DELETE  /contacts/:id               controllers.ContactsController.delete(id: Long)

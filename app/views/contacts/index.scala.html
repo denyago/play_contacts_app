@@ -1,0 +1,19 @@
+@(contacts: List[Contact])
+
+<h1>All my contacts</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>E-Mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @contacts.map { contact =>
+        <tr>
+            <td>@contact.name</td>
+            <td>@contact.email</td>
+        </tr>
+        }
+    </tbody>
+</table>
